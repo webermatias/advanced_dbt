@@ -1,6 +1,6 @@
 models:
-  - name: mrr_with_unit_test
-    description: ""
+  - name: rpt_mrr_with_unit_test
+    description: "This is this models description =)"
     tests:
         - dbt_utils.equality:
             compare_model: ref('unit_test_expected_output_mrr')

@@ -36,7 +36,15 @@ seeds:
           starts_at: DATE
           ends_at: DATE
           pricing: FLOAT
+  dbt_project_evaluator:
+    dbt_project_evaluator_exceptions:
+      +enabled: false
 
 #TODO: remove for Bingeflix repo
 tests:
   +store_failures: true
+
+vars:
+  # This tells dbt where to look for the profiles.yml file.
+  # profiles.yml must be stored in /workspace/.dbt to persist across Gitpod sessions 
+  DBT_PROFILES_DIR: /workspace/.dbt/

@@ -1,5 +1,5 @@
 --- models/finance/agg_mrr.sql
-{% set import_revenue = unit_testing_select_table(ref('mrr'), ref('unit_test_input_mrr')) %} -- This calls the macro we just wrote above, and returns our original source table, or our mock dataset, depending on the value of the unit_testing variable during dbt run
+{% set import_revenue = unit_testing_select_table(ref('rpt_mrr'), ref('unit_test_input_mrr')) %} -- This calls the macro we just wrote above, and returns our original source table, or our mock dataset, depending on the value of the unit_testing variable during dbt run
 
 
 SELECT

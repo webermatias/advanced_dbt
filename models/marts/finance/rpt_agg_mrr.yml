@@ -1,5 +1,5 @@
 models:
-  - name: agg_mrr
+  - name: rpt_agg_mrr
     description: This model contains the aggregate monthly recurring revenue for Bingeflix.
     tests:
         #TODO: remove for Bingeflix repo
